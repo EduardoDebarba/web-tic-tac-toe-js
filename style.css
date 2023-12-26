@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-color: #3D2652;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1.3rem;
+}
+
+h1{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.divPlayer1, .divPlayer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+
+label{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+input{
+    padding: .5rem;
+    border-radius: 10rem;
+    border-style: none;
+}
+
+h2{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#start{
+    width: 5%;
+    height: 5%;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#gameBoard{
+    display: grid;
+    grid-template-columns: 7rem 7rem 7rem;
+    grid-template-rows: 7rem 7rem 7rem;
+    gap: .7rem;
+    max-width: 25rem;
+}
+
+#gameBoard span{
+    background-color: #fff;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    font-size: 6rem;
+}
+
+#gameBoard span.win{
+    background-color: green;
+}

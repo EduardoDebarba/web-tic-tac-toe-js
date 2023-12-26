@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&family=Roboto+Condensed:wght@400;500&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jogo da Velha Web Js</title>
+  </head>
+  <body>
+    <h1>Jogo da Velha</h1>
+    <div class="divPlayer1">
+      <label for="player1">X</label>
+      <input type="text" id="player1" placeholder="Nome do Jogador 1" />
+    </div>
+    <div class="divPlayer2">
+      <label for="player2">O</label>
+      <input type="text" id="player2" placeholder="Nome do Jogador 2" />
+    </div>
+    <button id="start">Iniciar</button>
+    <h2>Vez de: <span id="turnPlayer"></span></h2>
+    <section id="gameBoard">
+      <span data-region="0.0">X </span>
+      <span data-region="0.1"> X</span>
+      <span data-region="0.2"> X</span>
+      <span data-region="1.0"> O</span>
+      <span data-region="1.1"> O</span>
+      <span data-region="1.2"> O</span>
+      <span data-region="2.0"> X</span>
+      <span data-region="2.1">0 </span>
+      <span data-region="2.2"> 0</span>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
